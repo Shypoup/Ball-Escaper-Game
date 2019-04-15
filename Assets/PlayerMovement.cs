@@ -41,9 +41,9 @@ public class PlayerMovement : MonoBehaviour {
 			rg.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
 		}
 
-        if (rg.position.y <= -5)
+        if (rg.position.y <= -1F)
         {
-            restart();
+            FindObjectOfType<GameManager>().EndGame();
         }
 
 

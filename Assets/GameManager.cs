@@ -1,11 +1,25 @@
 ﻿
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-   public void EndGame()
+
+    bool gameHasEnded = false;
+
+    public void EndGame()
     {
-        Debug.Log("Game over");
+        if (gameHasEnded == false)
+        {
+            gameHasEnded = true;
+            Debug.Log("Game over");
+            restart();
+        }
+    }
+    void restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+       
     }
 }
 /*

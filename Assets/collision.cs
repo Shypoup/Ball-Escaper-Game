@@ -10,14 +10,16 @@ public class collision : MonoBehaviour
     int health = 200;
     void OnCollisionEnter(Collision collisionInfo)
     {
+
         //We check if the object we collided with as a tag called "Obstacle".
-        if (collisionInfo.collider.name == "oppesiteball")
+        if (collisionInfo.collider.tag == "oppesiteball")
         {
             health -= 100;
             Debug.Log("noooooooooo");
             if (health == 0)
             {
-                restart();
+                Movement.enabled = false;
+                FindObjectOfType<GameManager>().EndGame();
             }
         }
     }

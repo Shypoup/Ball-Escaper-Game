@@ -31776,8 +31776,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54e1142b891f2b54a9de8f9d615911c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Movement: {fileID: 0}
-  GameManger: {fileID: 0}
+  Movement: {fileID: 1364331205}
+  GameManger: {fileID: 1364331212}
 --- !u!114 &1364331212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35249,7 +35249,7 @@ GameObject:
   - component: {fileID: 1511303644}
   m_Layer: 0
   m_Name: oppesiteball
-  m_TagString: oppesit
+  m_TagString: oppesiteball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44409,8 +44409,8 @@ GameObject:
   - component: {fileID: 2007061561}
   - component: {fileID: 2007061560}
   m_Layer: 0
-  m_Name: oppesiteball
-  m_TagString: oppesit
+  m_Name: oppesiteball1
+  m_TagString: oppesiteball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
