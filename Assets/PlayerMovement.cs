@@ -1,6 +1,7 @@
 ﻿
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -40,7 +41,10 @@ public class PlayerMovement : MonoBehaviour {
 			rg.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
 		}
 
-		
+        if (rg.position.y <= -5)
+        {
+            restart();
+        }
 
 
 
@@ -52,8 +56,15 @@ public class PlayerMovement : MonoBehaviour {
     {
         
             Destroy(other.gameObject);
-             score+= 1;
-        scoreText.text = score.ToString();
+            
+       
         
     }
+    void restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("Fallen");
+    }
 }
+
+
