@@ -6,6 +6,7 @@ TagManager:
   tags:
   - oppesit
   - oppesiteball
+  - player
   layers:
   - Default
   - TransparentFX

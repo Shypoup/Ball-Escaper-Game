@@ -1,0 +1,5 @@
+Polys:240	
+Vertes:345
+With VRaySun
+     vray physical camera
+Modifir; path deform binding(wsm)
