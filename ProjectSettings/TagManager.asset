@@ -7,6 +7,7 @@ TagManager:
   - oppesit
   - oppesiteball
   - player
+  - coins
   layers:
   - Default
   - TransparentFX

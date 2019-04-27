@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class PlayerMovement : MonoBehaviour {
 
 	public Rigidbody rg;
@@ -54,14 +55,6 @@ public class PlayerMovement : MonoBehaviour {
 
 	}
 
-	public void OnTriggerEnter(Collider other)
-	{
-		
-			Destroy(other.gameObject);
-			
-	   
-		
-	}
 
     void restart()
 	{
