@@ -62,7 +62,8 @@ public class PlayerMovement : MonoBehaviour {
 	   
 		
 	}
-	void restart()
+
+    void restart()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		Debug.Log("Fallen");
