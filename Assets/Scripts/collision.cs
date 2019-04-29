@@ -7,7 +7,7 @@ public class collision : MonoBehaviour
 {
     public PlayerMovement Movement;
     public GameManager GameManger;
-    int health = 200;
+    int health = 100;
     void OnCollisionEnter(Collision collisionInfo)
     {
 
